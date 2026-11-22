@@ -1,3 +1,8 @@
+/* font imports */
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
 *,
 *::before,
 *::after {
@@ -28,8 +33,10 @@ section {
 
 p,
 h1,
+h3,
 h4 {
   color: white;
+  font-family: "Sansation", sans-serif;
 }
 
 button {
@@ -43,8 +50,9 @@ button {
   position: relative;
   background-image:
     linear-gradient(to right, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    linear-gradient(to top, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
   background-size: 40px 40px; /* Grid square size */
+  background-position: left bottom; /* tells where to start the grid from (here its bottom to top and left to right) */
 }
 
 .profile-photo-div {
@@ -107,3 +115,41 @@ button {
   font-weight: bold;
   font-size: medium;
 }
+
+.projects-section h1{
+  font-size: 40px;
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.projects-section div {
+  flex: 1 1 calc(37.5% - 15px);
+  max-width: calc(37.5% - 15px);
+  min-width: 300px;
+  height: 350px;
+  background-color: transparent;
+  border: 1px solid #38cdf8;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.projects-section .project-1 {
+  flex-basis: 100%;
+  max-width: 75%;
+}
+@media (max-width: 852px) {
+  .projects-section div,
+  .projects-section .project-1 {
+    min-width: 75%;
+    max-width: 75%;
+  }
+}
+
+.projects-section img{
+  width: 95%;
+  height: 65%;
+  margin: 15px;
+  border: 3px solid rgba(90, 230, 255, 0.3);
+}
+
