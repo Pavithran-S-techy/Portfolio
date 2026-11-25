@@ -5,17 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pavithran S</title>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="shortcut icon" href="./media/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./media/favicon.png" type="image/x-icon" />
   </head>
   <body>
     <main>
       <section class="introduction-section">
         <div class="profile-photo-div">
-          <img src="./media/profile_picture.jpg" alt="" />
+          <img src="./media/profile_picture.jpg" alt="Pavithran S" />
         </div>
         <div class="profile-intro-div">
+          <span class="greeting-tag">Hello, I'm</span>
           <h1>PAVITHRAN S</h1>
           <h4>Python Developer | Django | MySQL</h4>
+
+          <!-- Quick Contact Info Bar -->
+          <div class="intro-contact-bar">
+            <span>📍 Thiruvananthapuram, Kerala</span>
+            <a href="tel:+918111812712">📞 +91 8111812712</a>
+            <a href="mailto:pavithranstechy@gmail.com"
+              >✉️ pavithranstechy@gmail.com</a
+            >
+            <a
+              href="https://linkedin.com/in/pavithran-sajikumar"
+              target="_blank"
+              rel="noopener noreferrer"
+              >🔗 LinkedIn</a
+            >
+          </div>
+
           <div class="about-me-div">
             <h5>About Me</h5>
             <p>
@@ -27,29 +44,184 @@
               technical challenges, and growing as a developer.
             </p>
           </div>
+
           <div class="intro-button-div">
-            <button class="view-github">View Github</button>
-            <button class="get-in-touch">Get in touch</button>
+            <a
+              href="https://github.com/pavithran-s-techy"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn view-github"
+              >View GitHub</a
+            >
+            <a href="#contact" class="btn get-in-touch">Get in Touch</a>
           </div>
         </div>
       </section>
       <section class="projects-section">
         <h1>PROJECTS</h1>
-          <div class="project-1">
-            <img src="./media/project-photos/flood_prediction_image.png" alt="">
-            <h3>Flood prediction using AI</h3>
-            <p>to be typed</p>
+
+        <div class="project-card project-1">
+          <img
+            src="./media/project-photos/flood_prediction_image.png"
+            alt="Flood Prediction System"
+          />
+          <div class="project-content">
+            <h3>Flood Prediction Using AI</h3>
+            <p>
+              A multi-source data-driven LSTM model for flood prediction
+              featuring backend APIs, database operations, and map-based flood
+              visualization[cite: 3].
+            </p>
+            <div class="project-skills">
+              <span>Python</span>
+              <span>Flutter</span>
+              <span>Node.js</span>
+              <span>MySQL</span>
+              <span>Google Earth Engine</span>
+            </div>
           </div>
-          <div class="project-2">
-            <img src="./media/project-photos/flood_prediction_image.png" alt="">
-            <h3></h3>
-            <p></p>
+        </div>
+
+        <div class="project-card project-2">
+          <img
+            src="./media/project-photos/resume_builder_image.png"
+            alt="Interactive Resume Builder"
+          />
+          <div class="project-content">
+            <h3>Interactive Resume Builder</h3>
+            <p>
+              Web application featuring REST APIs, user authentication,
+              responsive frontend interfaces, and MySQL database integration for
+              resume management[cite: 3].
+            </p>
+            <div class="project-skills">
+              <span>React.js</span>
+              <span>Node.js</span>
+              <span>Express.js</span>
+              <span>MySQL</span>
+            </div>
           </div>
-          <div class="project-3">
-            <img src="./media/project-photos/flood_prediction_image.png" alt="">
-            <h3></h3>
-            <p></p>
+        </div>
+
+        <div class="project-card project-3">
+          <img
+            src="./media/project-photos/flood_prediction_image.png"
+            alt="Project 3"
+          />
+          <div class="project-content">
+            <h3>Upcoming Project</h3>
+            <p>
+              Short description of the project functionality and problem solved.
+            </p>
+            <div class="project-skills">
+              <span>Python</span>
+              <span>Django</span>
+              <span>MySQL</span>
+            </div>
           </div>
+        </div>
+      </section>
+
+      <!-- Technical Skills Section -->
+      <section class="skills-section">
+        <h1>TECHNICAL SKILLS</h1>
+        <div class="skills-container">
+          <div class="skill-card">
+            <h3>Languages</h3>
+            <div class="skill-tags">
+              <span>Python</span>
+              <span>C</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3>Web & Database</h3>
+            <div class="skill-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>React.js</span>
+              <span>Django</span>
+              <span>MySQL</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3>Tools & Concepts</h3>
+            <div class="skill-tags">
+              <span>REST APIs</span>
+              <span>OOP</span>
+              <span>DBMS</span>
+              <span>Git</span>
+              <span>GitHub</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Section (Placed First) -->
+      <section class="education-section">
+        <h1>EDUCATION</h1>
+        <div class="timeline-container">
+          <div class="timeline-card">
+            <span class="badge">2022 - 2026</span>
+            <h3>B.Tech in Computer Science and Engineering</h3>
+            <h4>College of Engineering, Attingal</h4>
+            <p class="sub-detail">APJ Abdul Kalam Technological University</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Professional Training Section (Placed Second) -->
+      <section class="training-section">
+        <h1>PROFESSIONAL TRAINING</h1>
+        <div class="timeline-container">
+          <div class="timeline-card">
+            <span class="badge">June 2026 - Present</span>
+            <h3>Python Full Stack Developer Trainee</h3>
+            <h4>Luminar Technolab</h4>
+            <ul>
+              <li>
+                Developed advanced proficiency in Python, including OOP,
+                exception handling, and practical problem-solving.
+              </li>
+              <li>
+                Gained hands-on experience with MySQL, SQL queries, database
+                design, and integration.
+              </li>
+              <li>
+                Trained in Django web development, REST APIs, frontend
+                technologies, and Git-based version control.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact-section" id="contact">
+        <h1>GET IN TOUCH</h1>
+        <div class="contact-container">
+          <p>Thiruvananthapuram, Kerala</p>
+          <div class="contact-links">
+            <a href="tel:+918111812712" class="contact-item">+91 8111812712</a>
+            <a href="mailto:pavithranstechy@gmail.com" class="contact-item"
+              >pavithranstechy@gmail.com</a
+            >
+            <a
+              href="https://github.com/pavithran-s-techy"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-item"
+              >GitHub</a
+            >
+            <a
+              href="https://linkedin.com/in/pavithran-sajikumar"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-item"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
       </section>
     </main>
   </body>
